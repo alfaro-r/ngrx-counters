@@ -1,0 +1,16 @@
+<div class="container">
+    <div>
+        <button id="increment" class="favorite styledAdd" (click)="increment()">Increment</button>
+        <button id="decrement" class="favorite styled" (click)="decrement()">Decrement</button>
+    </div>
+    <br>
+    <div>
+        <button id="decrement" class="favorite styledAdd" (click)="multiply()">Multiply</button>
+        <button id="decrement" class="favorite styled" (click)="divide()">Divide</button>
+    </div>
+
+    <br>
+    <div>Current Count: {{ count$ | async }}</div>
+    <br>
+    <button id="reset" class="favorite styledReset" (click)="reset()">Reset Counter</button>
+</div>
